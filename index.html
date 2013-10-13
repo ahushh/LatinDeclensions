@@ -1,0 +1,184 @@
+<!doctype html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Latin declensions</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <style type="text/css">
+    small, #showAnswers {
+        display: none;
+    }
+  </style>
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="js/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+  <header>
+  </header>
+  <div class="container">
+    <form class="custom">
+      <fieldset>
+        <legend>
+          Declensions
+        </legend>
+
+        <div class="row">
+          <div class="large-4 columns">
+            <label for="firstDeclension">
+              <input checked type="checkbox" style="display: none;" id="firstDeclension" class="hidden-field">
+              <span class="custom checkbox checked"></span>
+              Declinatio prima
+            </label>
+            <label for="secondDeclension">
+              <input checked type="checkbox" style="display: none;" id="secondDeclension" class="hidden-field">
+              <span class="custom checkbox checked"></span>
+              Declinatio secunda
+            </label>
+            <label for="thirdDeclension">
+              <input checked type="checkbox" style="display: none;" id="thirdDeclension" class="hidden-field">
+              <span class="custom checkbox checked"></span>
+              Declinatio tertia
+            </label>
+            <label for="fourthDeclension">
+              <input checked type="checkbox" style="display: none;" id="fourthDeclension" class="hidden-field">
+              <span class="custom checkbox checked"></span>
+              Declinatio quarta
+            </label>
+            <label for="fifthDeclension">
+              <input checked type="checkbox" style="display: none;" id="fifthDeclension" class="hidden-field">
+              <span class="custom checkbox checked"></span>
+              Declinatio quinta
+            </label>
+          </div>
+          <div class="large-6 columns">          
+            <h2 id="wordDefinition">Word definition</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-6 columns">          
+            <h3>Singularis</h3>
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Nominativus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="singularis nominativus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Genetivus</span>
+              </div>
+              <div class="small-9 columns">
+                <input autofocus type="text" placeholder="" class="singularis genetivus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Dativus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="singularis dativus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Accusativus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="singularis accusativus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Ablativus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="singularis ablativus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+          </div>
+
+          <div class="large-6 columns">          
+            <h3>Pluralis</h3>
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Nominativus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="pluralis nominativus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Genetivus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="pluralis genetivus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Dativus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="pluralis dativus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Accusativus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="pluralis accusativus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+            <div class="row collapse">
+              <div class="small-3 columns">
+                <span class="prefix radius">Ablativus</span>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" placeholder="" class="pluralis ablativus">
+                <small><span class="answer">Wrong answer</span></small>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-6 columns small">
+            <input class="button small" type="button" id="checkWord" accesskey="c" value="Check">
+            <input class="button small" type="button" id="showAnswers" accesskey="s" value="Show answers">
+            <input class="button small" type="button" id="newWord" accesskey="n" value="New word">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <footer>
+  </footer>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+  $(document).foundation();
+  </script>
+  <script src="js/declensions.js"></script>
+</body>
+</html>
